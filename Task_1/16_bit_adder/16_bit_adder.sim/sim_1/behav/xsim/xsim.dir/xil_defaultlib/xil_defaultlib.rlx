@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/pinto/Documentos/SEDR/Task_1/16_bit_adder/16_bit_adder.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/pinto/Documentos/SEDR/Task_1/16_bit_adder/16_bit_adder.srcs/sim_1/new/adder_16_tb.v,1552361915,verilog,,,,adder_16_tb,,,,,,,,
+/home/pinto/Documentos/SEDR/Task_1/16_bit_adder/16_bit_adder.srcs/sources_1/new/adder.v,1552360790,verilog,,/home/pinto/Documentos/SEDR/Task_1/16_bit_adder/16_bit_adder.srcs/sim_1/new/adder_16_tb.v,,adder_module;single_adder,,,,,,,,

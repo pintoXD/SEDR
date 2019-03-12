@@ -24,7 +24,7 @@
 
 
 
-module multiplier(
+module multiplier_4_by_4(
     input [3:0] a, 
     input [3:0] b,
     
@@ -56,14 +56,22 @@ module multiplier(
  
  adder module_2(.a(w[2]), .b(w[3]), .cin(aux_carry[0]), .s(s_aux[0]), .cout(aux_carry[1]));
  
- adder module_3(.a(w[4]), .b(s_aux[0]), .cin(cout1), .s(pout2), .cout(cout2));
+ adder module_3(.a(w[4]), .b(s_aux[0]), .cin(1'b0), .s(p[2]), .cout(aux_carry[2]));
  
- assign p2 = pout2;
+
  
  //P3
  
- assign p3 = cout2;
+ and(w[5], a[3], b[0]);
+ and(w[6], a[2], b[1]);
+ and(w[7], a[1], b[2]);
+ and(w[8], a[0], b[3]);
  
+ adder module_4(.a(w[5]), .b(w[6]), .cin(aux_carry[1]), .s(s_aux[1]), .cout(aux_carry[3]));
+ 
+ adder module_5(.a(w[7]), .b(s_aux[1]), .cin(aux_carry[2]), .s(s_aux[2]), .cout(aux_carry[4]));
+ 
+ adder module_6(.a(w[8]), .b(s_aux[2]), .cin(aux_carry[2]), .s(s_aux[6]), .cout(aux_carry[4]));
  
  
  
