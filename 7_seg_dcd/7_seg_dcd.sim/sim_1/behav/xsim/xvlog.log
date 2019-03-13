@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/otto/Documentos/SEDR/7_seg_dcd/7_seg_dcd.srcs/sources_1/new/display_dcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dcd_7_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/otto/Documentos/SEDR/7_seg_dcd/7_seg_dcd.srcs/sim_1/new/sim_7_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_7_seg
