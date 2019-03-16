@@ -45,22 +45,40 @@ module shifter(
             out_data[7] = in_data[7];
 
 
-     if(cnt == 2'b01 || cnt == 2'b10)
+     if(cnt == 2'b01)
+     
+         begin
+                  
+               for(i = 0; i < 4; i = i+1)
+                 
+                      begin
+                         
+                         
+                         out_data = out_data << 1;
+                 
+                 
+                      end
+               
+         end
+     
+     
+     if(cnt == 2'b10)
 		
 		begin        
 		      
-		  for(i = 0; i < 4 * cnt; i = i+1)
+		  for(i = 0; i < 8; i = i+1)
 		     
 		     begin
 			         
 			         
-			         out_data = out_data << 1;
+			        out_data = out_data << 1;
 		     
 		     
 		      end
 		   
 		   
 		   end
+		   
   	end
     
     
